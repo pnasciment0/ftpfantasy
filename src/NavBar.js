@@ -1,20 +1,31 @@
 import React, { Component } from 'react';
 import './NavBar.css';
 
+import {
+    Route,
+    NavLink,
+    HashRouter
+} from "react-router-dom";
+
+import Home from "./Home";
+import LmNotes from "./LmNotes";
+
 class NavBar extends Component {
     render() {
         return (
-            <div>
-                <h1>FTP Fantasy</h1>
-                <nav>
-                    <a href="/">Home</a>
-                    <a href="/lm-notes">LM Notes</a>
-                    <a href="/managers">Managers</a>
-                    <a href="/history">History</a>
-                    <a href="/season">Season</a>
-                    <a href="/finances">Finances</a>
-                </nav>
-            </div>
+            <HashRouter>
+                <div>
+                    <h1>FTP Fantasy</h1>
+                    <nav>
+                        <NavLink exact to="/">Home</NavLink>
+                        <NavLink to="/lm-notes">LM Notes</NavLink>
+                    </nav>
+                    <div className="content">
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/lm-notes" component={LmNotes}/>
+                    </div>
+                </div>
+            </HashRouter>
         );
     }
 }

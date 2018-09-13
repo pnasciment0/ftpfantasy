@@ -16,3 +16,8 @@ nav a {
     display:inline-block;
     text-decoration: none;
 }
+
+.content {
+    background-color: white;
+    padding: 20px;
+}
