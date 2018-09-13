@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './homepage.css';
 
 class NavBar extends Component {
     render() {
@@ -9,6 +10,9 @@ class NavBar extends Component {
                     <a href="/">Home</a>
                     <a href="/lm-notes">LM Notes</a>
                     <a href="/managers">Managers</a>
+                    <a href="/history">History</a>
+                    <a href="/season">Season</a>
+                    <a href="/finances">Finances</a>
                 </nav>
             </div>
         );
