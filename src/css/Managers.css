@@ -1,0 +1,57 @@
+.bio-pic {
+    height: 250px;
+    width: 250px;
+}
+
+.bios-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.bio {
+    margin: 10px;
+    position: relative;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.name {
+    position: absolute;
+    color: black;
+    top: 42%;
+    left: 15%;
+    z-index: 2;
+    font-weight: 900;
+    font-size: 26px;
+    margin: 0 auto;
+    width: 71%;
+    text-align: center;
+    visibility: hidden;
+}
+
+.bio:hover .name {
+    visibility:visible;
+    transition: .4s fadeIn;
+}
+
+.bio:hover .bio-pic {
+    opacity: 0.2;
+}
+
+.bio:hover {
+    cursor: pointer;
+}
+
+.disable-imagus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.di-wrapper {
+    position: relative;
+}
+
