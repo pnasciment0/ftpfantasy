@@ -17,14 +17,9 @@ class Bio extends Component {
                     <Link to={url}><div className="name">{name}</div></Link>
                     <Link to={url}><div>{teamName}</div></Link>
                 </div>
-                {/*<div className="di-wrapper">*/}
-                    {/*<img className="bio-pic" src={require("../assets/" + name.toLowerCase().split(" ").join("-") + ".jpg")} alt={name}/>*/}
-                    {/*<div className="disable-imagus"></div>*/}
-                {/*</div>*/}
                 <HashRouter>
                     <div>
                         <Link to={url}>
-                            {/*<img className="bio-pic" src={require("../assets/" + name.toLowerCase().split(" ").join("-") + ".jpg")} alt={name}/>*/}
                             <div className="di-wrapper">
                             <img className="bio-pic" src={require("../assets/" + name.toLowerCase().split(" ").join("-") + ".jpg")} alt={name}/>
                             <div className="disable-imagus"></div>
