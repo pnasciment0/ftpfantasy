@@ -17,26 +17,20 @@
 }
 
 .name {
-    position: absolute;
     color: black;
-    top: 42%;
-    left: 15%;
-    z-index: 2;
     font-weight: 900;
     font-size: 26px;
-    margin: 0 auto;
-    width: 71%;
     text-align: center;
-    visibility: hidden;
 }
 
-.bio:hover .name {
+.bio:hover .name-wrapper {
     visibility:visible;
-    transition: .4s fadeIn;
+    transition: .4s ease;
 }
 
 .bio:hover .bio-pic {
     opacity: 0.2;
+    transition: ease 0.4s;
 }
 
 .bio:hover {
@@ -53,5 +47,15 @@
 
 .di-wrapper {
     position: relative;
+}
+
+.name-wrapper {
+    position: absolute;
+    top: 42%;
+    z-index: 2;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
 }
 

@@ -10,6 +10,7 @@ import {
 import Home from "../js/Home";
 import LmNotes from "../js/LmNotes";
 import Managers from "../js/Managers";
+import ManagerPage from "./ManagerPage";
 
 class NavBar extends Component {
     render() {
@@ -25,7 +26,8 @@ class NavBar extends Component {
                     <div className="content">
                         <Route exact path="/" component={Home}/>
                         <Route path="/lm-notes" component={LmNotes}/>
-                        <Route path="/managers" component={Managers}/>
+                        <Route exact path="/managers" component={Managers}/>
+                        <Route exact path="/managers/:name" component={ManagerPage}/>
                     </div>
                 </div>
             </HashRouter>
