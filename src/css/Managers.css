@@ -23,6 +23,11 @@
     text-align: center;
 }
 
+.name-wrapper a {
+    text-decoration:none;
+    color:black;
+}
+
 .bio:hover .name-wrapper {
     visibility:visible;
     transition: .4s ease;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ManagerPage from "../js/ManagerPage.js";
 
 import {
     HashRouter,
@@ -15,8 +14,8 @@ class Bio extends Component {
         return(
             <div className="bio">
                 <div className="name-wrapper">
-                    <div className="name">{name}</div>
-                    <div>{teamName}</div>
+                    <Link to={url}><div className="name">{name}</div></Link>
+                    <Link to={url}><div>{teamName}</div></Link>
                 </div>
                 {/*<div className="di-wrapper">*/}
                     {/*<img className="bio-pic" src={require("../assets/" + name.toLowerCase().split(" ").join("-") + ".jpg")} alt={name}/>*/}
@@ -24,7 +23,13 @@ class Bio extends Component {
                 {/*</div>*/}
                 <HashRouter>
                     <div>
-                        <Link to={url}><img className="bio-pic" src={require("../assets/" + name.toLowerCase().split(" ").join("-") + ".jpg")} alt={name}/></Link>
+                        <Link to={url}>
+                            {/*<img className="bio-pic" src={require("../assets/" + name.toLowerCase().split(" ").join("-") + ".jpg")} alt={name}/>*/}
+                            <div className="di-wrapper">
+                            <img className="bio-pic" src={require("../assets/" + name.toLowerCase().split(" ").join("-") + ".jpg")} alt={name}/>
+                            <div className="disable-imagus"></div>
+                            </div>
+                        </Link>
                     </div>
                 </HashRouter>
             </div>
