@@ -1,0 +1,44 @@
+{
+  "managers": [
+    {
+      "name": "Paulo Nascimento",
+      "teamName": "Lake Michigan Stoners"
+    },
+    {
+      "name": "Thomas Anzalone",
+      "teamName": "Long Island Legion"
+    },
+    {
+      "name": "Henry Mancao",
+      "teamName": "Broward Builders"
+    },
+    {
+      "name": "UK Musa",
+      "teamName": "Windy City Jayhawks"
+    },
+    {
+      "name": "Bryan Petti",
+      "teamName": "Hogtown Flyboys"
+    },
+    {
+      "name": "Andrew Rubio",
+      "teamName": "South Florida Storm"
+    },
+    {
+      "name": "Neil Seth",
+      "teamName": "Utah Polygamists"
+    },
+    {
+      "name": "Aqib Shah",
+      "teamName": "Aventura Aardvarks"
+    },
+    {
+      "name": "Anirudh Neti",
+      "teamName": "Butters Bottom Bitches"
+    },
+    {
+      "name": "Rohan Batra",
+      "teamName": "West Coast Soyboys"
+    }
+  ]
+}

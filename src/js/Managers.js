@@ -1,24 +1,20 @@
 import React, { Component } from "react";
 import Bio from "../js/Bio.js";
-import '../css/Managers.css'
+import '../css/Managers.css';
+import managerData from '../assets/data/managers.json';
 
 class Managers extends Component {
     render() {
+        let arr = [];
+        managerData.managers.forEach(function(man) {
+           arr.push(man);
+        });
         return(
             <div>
                 <h1> Who Are We? </h1>
-                <p> FTP Fantasy is made up of a colorful cast of characters from all walks of life (lol even when we're on our own site I still abuse alliteration aggressively). From cloud-burning Italian gingers to Filipino tryhards, we have both the best and worst the human race has to offer (respectively). Click on any of the bio images below to read more about each of our members. </p>
+                <p> FTP Fantasy is made up of a colorful cast of characters from all walks of life (lol even when we're on our own site I still aggressively abuse alliteration). From cloud-burning Italian gingers to Filipino tryhards, we have both the best and worst the human race has to offer (respectively). Click on any of the bio images below to read more about each of our members. </p>
                 <div className="bios-wrapper">
-                    <Bio name="Paulo Nascimento" teamName="Lake Michigan Stoners" />
-                    <Bio name="Thomas Anzalone" teamName="Long Island Legion"/>
-                    <Bio name="Henry Mancao" teamName="Broward Builders"/>
-                    <Bio name="UK Musa" teamName="Windy City Jayhawks"/>
-                    <Bio name="Bryan Petti" teamName="Hogtown Flyboys"/>
-                    <Bio name="Andrew Rubio" teamName="South Florida Storm"/>
-                    <Bio name="Neil Seth" teamName="Utah Polygamists"/>
-                    <Bio name="Aqib Shah" teamName="Aventura Aardvarks"/>
-                    <Bio name="Anirudh Neti" teamName="Butters Bottom Bitches"/>
-                    <Bio name="Rohan Batra" teamName="West Coast Soyboys"/>
+                    {arr.map(item => <Bio key={item.name} name={item.name} teamName = {item.teamName}/>)}
                 </div>
             </div>
         );
