@@ -6,21 +6,21 @@ import {
     Link
 } from "react-router-dom";
 
-class ManagerPage extends Component {
+class TeamPage extends Component {
     render() {
-        let name = this.props.match.params.name;
-        let properName = name.split("-").join(" ");
+        let teamName = this.props.match.params.teamName;
+        let properName = teamName.split("-").join(" ");
         return(
             <div>
                 <div className="main-wrapper">
                     <h1 className="proper-name">
                         {properName}
                     </h1>
-                    This is {name}
+                    This is {teamName}
                 </div>
                 <HashRouter>
                     <div>
-                        <Link to="/managers">Back to all managers</Link>
+                        <Link to="/teams">Back to all teams</Link>
                     </div>
                 </HashRouter>
             </div>
@@ -30,4 +30,4 @@ class ManagerPage extends Component {
 
 }
 
-export default ManagerPage;
+export default TeamPage;
