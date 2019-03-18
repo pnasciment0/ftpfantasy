@@ -17,9 +17,13 @@ class ManagerPage extends Component {
                         {properName}
                     </h1>
                     This is {name}
+                   <div class="di-wrapper">
+                        <img className="bio-pic manager-page-pic" src={require(`../assets/profPics/${name.toLowerCase().replace(" ", "-")}.jpg`)} alt={name}/>
+                        <div class="disable-imagus"></div>
+                   </div>
                 </div>
                 <HashRouter>
-                    <div>
+                    <div class="back-link-wrapper">
                         <Link to="/managers">Back to all managers</Link>
                     </div>
                 </HashRouter>
@@ -27,7 +31,6 @@ class ManagerPage extends Component {
 
         )
     }
-
 }
 
 export default ManagerPage;

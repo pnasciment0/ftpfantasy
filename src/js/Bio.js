@@ -21,8 +21,8 @@ class Bio extends Component {
                     <div>
                         <Link to={url}>
                             <div className="di-wrapper">
-                            <img className="bio-pic" src={require(`../assets/profPics/${name.toLowerCase().replace(" ", "-")}.jpg`)} alt={name}/>
-                            <div className="disable-imagus"></div>
+                                <img className="bio-pic" src={require(`../assets/profPics/${name.toLowerCase().replace(" ", "-")}.jpg`)} alt={name}/>
+                                <div className="disable-imagus"></div>
                             </div>
                         </Link>
                     </div>

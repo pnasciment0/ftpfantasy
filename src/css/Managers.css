@@ -22,6 +22,7 @@
     font-size: 26px;
     text-align: center;
     line-height: 28px;
+    padding-bottom:15px;
 }
 
 .name-wrapper a {
@@ -65,3 +66,10 @@
     visibility: hidden;
 }
 
+.manager-page-pic {
+    border: 1px solid black;
+}
+
+.back-link-wrapper > a {
+    color: pink;
+}
