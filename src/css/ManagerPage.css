@@ -1,3 +1,37 @@
 .proper-name {
     text-transform: capitalize;
 }
+
+.back-link-wrapper {
+    padding-top: 40px;
+}
+
+.caption {
+    width: 252px;
+    padding-top: 2px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.body-wrapper {
+    padding-left: 40px;
+}
+
+.category {
+    color: #e58999;
+    font-weight:bold;
+    padding-bottom:5px;
+    /*text-decoration:underline;*/
+}
+
+.back-link-wrapper > a {
+    color: pink;
+}
+
+.cat-value {
+    padding-bottom: 20px;
+}
