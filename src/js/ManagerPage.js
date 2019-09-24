@@ -30,8 +30,8 @@ class ManagerPage extends Component {
                         <div className="cat-value">{data.name}</div>
                         <div className="category">Team Name:</div>
                         <div className="cat-value">{data.teamName}</div>
-                        <div className="category">Number of Seasons in League:</div>
-                        <div className="cat-value">{data.upcomingSeasonNo + getYearSuffix(data.upcomingSeasonNo)}</div>
+                        <div className="category">Tenure in League:</div>
+                        <div className="cat-value">{data.upcomingSeasonNo + getYearSuffix(data.upcomingSeasonNo) + " season"}</div>
                         <div className="category">Hails from:</div>
                         <div className="cat-value">{data.location}</div>
                         <div className="category">Bio:</div>
@@ -53,6 +53,7 @@ function toUrlCase (str) {
     return str.toLowerCase().split(" ").join("-");
 }
 
+// TODO: maybe expand this to include numbers after 20
 function getYearSuffix(num) {
     switch (num) {
         case 1:

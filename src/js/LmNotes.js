@@ -4,10 +4,8 @@ class LmNotes extends Component {
     render() {
         return(
             <div>
-                <h1> there will be some more stuff here </h1>
-                <p> the lm notes will go here</p>
-                <p> fuck aqib amirite </p>
-                <p> bitch u guessed it </p>
+                <h1> League Manager's Blog </h1>
+                <p> ESPN has turned their LM Note editor into an abomination, and we wanted somewhere robust to put LM notes from seasons past.</p>
             </div>
         );
     }

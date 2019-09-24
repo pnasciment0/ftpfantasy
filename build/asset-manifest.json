@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbdff892.chunk.css",
+    "main.js": "/static/js/main.aa0f6d84.chunk.js",
+    "main.js.map": "/static/js/main.aa0f6d84.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.78ae9787.chunk.js": "/static/js/2.78ae9787.chunk.js",
+    "static/js/2.78ae9787.chunk.js.map": "/static/js/2.78ae9787.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d7e96bb3f1448279c8c45711014d65b2.js": "/precache-manifest.d7e96bb3f1448279c8c45711014d65b2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.cbdff892.chunk.css.map": "/static/css/main.cbdff892.chunk.css.map",
+    "static/media/andrew-rubio.jpg": "/static/media/andrew-rubio.4e027747.jpg",
+    "static/media/anirudh-neti.jpg": "/static/media/anirudh-neti.a9fc8277.jpg",
+    "static/media/aqib-shah.jpg": "/static/media/aqib-shah.2a87d394.jpg",
+    "static/media/bryan-petti.jpg": "/static/media/bryan-petti.5cc8e486.jpg",
+    "static/media/henry-mancao.jpg": "/static/media/henry-mancao.dd6c13e7.jpg",
+    "static/media/neil-seth.jpg": "/static/media/neil-seth.3f1c80b4.jpg",
+    "static/media/paulo-nascimento.jpg": "/static/media/paulo-nascimento.1f764514.jpg",
+    "static/media/rohan-batra.jpg": "/static/media/rohan-batra.60574d7f.jpg",
+    "static/media/thomas-anzalone.jpg": "/static/media/thomas-anzalone.e7aa9bd9.jpg",
+    "static/media/uk-musa.jpg": "/static/media/uk-musa.9b706ef5.jpg"
+  }
+}
