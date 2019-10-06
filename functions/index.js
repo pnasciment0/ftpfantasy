@@ -1,13 +1,11 @@
 const functions = require('firebase-functions');
 const express = require('express');
 const bodyParser = require('body-parser');
+const axios = require('axios');
 const cors = require('cors');
-const request = require('request');
 const cheerio = require('cheerio');
 
 require('dotenv').config();
-
-let rp = require('request-promise');
 
 const app = express();
 
@@ -37,18 +35,20 @@ async function sendStandingsData() {
     const res = await getStandingsData();
 }
 
-let url = `https://fantasy.espn.com/football/league/standings?leagueId=${GLOBAL_LEAGUE_ID}`;
-const response = rp(url);
-let $ = cheerio.load(response);
-let items = $("span.teamName");
-console.log(items);
-for (let i = 0; i < items.length; i++) {
-    console.log("test");
-    console.log($(items[i]));
-}
-
-
 const api = functions.https.onRequest(app);
 module.exports = {
     api
 };
+
+function BLAH() {
+    const url = `https://fantasy.espn.com/apis/v3/games/ffl/seasons/2019/segments/0/leagues/${GLOBAL_LEAGUE_ID}?view=mTeam`;
+    axios.get(url)
+        .then(response => {
+            console.log(response.data);
+        })
+        .catch(error => {
+            console.log(error.response.data);
+        })
+}
+
+BLAH();
