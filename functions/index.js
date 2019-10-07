@@ -21,7 +21,7 @@ app.get("/standings", (req, res) => {
 });
 
 async function getStandingsData() {
-    let url = 'https://fantasy.espn.com/football/league/standings?leagueId=${GLOBAL_LEAGUE_ID}';
+    const url = `https://fantasy.espn.com/apis/v3/games/ffl/seasons/2019/segments/0/leagues/${GLOBAL_LEAGUE_ID}?view=mTeam`;
     try {
         const response = await rp(url);
         let $ = cheerio.load(response);
@@ -35,20 +35,25 @@ async function sendStandingsData() {
     const res = await getStandingsData();
 }
 
-const api = functions.https.onRequest(app);
-module.exports = {
-    api
-};
-
-function BLAH() {
+async function BLAH() {
     const url = `https://fantasy.espn.com/apis/v3/games/ffl/seasons/2019/segments/0/leagues/${GLOBAL_LEAGUE_ID}?view=mTeam`;
     axios.get(url)
         .then(response => {
-            console.log(response.data);
+            var teams = response.data.teams;
+            teams.forEach(function (team) {
+               console.log(team.abbrev);
+            });
         })
         .catch(error => {
-            console.log(error.response.data);
+            return Promise.reject(error.response.data);
         })
 }
 
 BLAH();
+// ===================== Exports =====================
+
+const api = functions.https.onRequest(app);
+
+module.exports = {
+    api
+};
