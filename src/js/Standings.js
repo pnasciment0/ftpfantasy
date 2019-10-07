@@ -21,6 +21,8 @@ class Standings extends Component {
                 <h1> Current FTP Standings </h1>
                 <h2> Response from server:</h2>
                 <p>{this.state.response}</p>
+
+                <h2> UNDER CONSTRUCTION </h2>
             </div>
         );
     }
